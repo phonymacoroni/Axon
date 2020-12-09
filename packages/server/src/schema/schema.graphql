@@ -13,6 +13,7 @@ type Query {
 
 type Mutation {
   createDataset(upload: Upload!): Dataset
+  renameDataset(id: ID!, newName: String!): Dataset
 
   createProject(name: String!): Project
   updateProject(id: ID!, updates: ProjectUpdateInput!): Project!
